@@ -1,0 +1,19 @@
+span { text-decoration: line-through; }
+@media (min-width:1px) { #minWidth { text-decoration: none; } }
+#maxWidth { text-decoration: line-through; }
+@media (max-width:1px) { #maxWidth { text-decoration: none; } }
+@media (orientation: portrait) { #portrait { text-decoration: none; } }
+@media (orientation: landscape) { #landscape { text-decoration: none; } }
+@media (prefers-color-scheme: dark),(prefers-color-scheme: light) { #colorscheme { text-decoration: none; } }
+@media (prefers-color-scheme: dark) { #indarkmode { text-decoration: none; } }
+@media (prefers-color-scheme: light) { #inlightmode { text-decoration: none; } }
+@media (monochrome) { #isMonochrome { text-decoration: none; } }
+@media (grid:1) { #grid { text-decoration: none; } }
+@media (min-color-index: 0) { #color-index { text-decoration: none; } }
+@media (min-color-index: 1) { #color-index-used { text-decoration: none; } }
+
+#byJavascript span { text-decoration: none; }
+#internalscript { text-decoration: line-through; }
+#externalscript { text-decoration: line-through; }
+
+td { border: 1px solid black; }

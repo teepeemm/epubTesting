@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Epub support</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="style-media.css" type="text/css" media="(min-width:1pt)" />
+        <style>#internal { text-decoration: none; }</style>
+        <style media="(min-width:1pt)">
+            #internalmedia { text-decoration: none; }
+        </style>
+    </head>
+    <body>
+        <h1>Epub Support</h1>
+        <h2>Supported styling and media queries:</h2>
+        <ul>
+            <li>default: <s>not</s> supported</li>
+            <li>by internal style tag: <span id="internal">supported</span></li>
+            <li>by internal style tag with media: <span id="internalmedia">supported</span></li>
+            <li>by external style tag with media: <span id="externalmedia">supported</span></li>
+            <li>min-width: <span id="minWidth">supported</span></li>
+            <li>max-width: <span id="maxWidth">not</span> supported</li>
+            <li>Color index: <span id="color-index">supported</span></li>
+            <li>Dark/light mode: <span id="colorscheme">supported</span></li>
+        </ul>
+        <h2>Other styling and media queries:</h2>
+        <ul>
+            <li>Color index used: <span id="color-index-used">yes</span></li>
+            <li>Orientation: <span id="portrait">portrait</span> <span id="landscape">landscape</span></li>
+            <li><span id="indarkmode">dark</span> <span id="inlightmode">light</span> mode</li>
+            <li>Monochrome: <span id="isMonochrome">is monochrome</span></li>
+            <li>Grid: <span id="grid">uses grid</span></li>
+        </ul>
+        <h2>Javascript:</h2>
+        <ul id="byJavascript">
+            <li>color depth: <span id="colorDepth"></span> (3 times the css media color?)</li>
+            <li>pixel depth: <span id="pixelDepth"></span> (or this?)</li>
+            <li>device pixel ratio: <span id="devicePixelRatio"></span> (approx dpi/96?)</li>
+            <li>Internal script: <span id="internalscript">supported</span></li>
+            <li>External script: <span id="externalscript">supported</span></li>
+        </ul>
+        <table>
+            <thead>
+                <tr><th></th><th>Width</th><th>Height</th><th>Ratio</th></tr>
+            </thead>
+            <tbody>
+                <tr id="windowinner">
+                    <td>window inner</td><td></td><td></td><td></td>
+                </tr>
+                <tr id="windowouter">
+                    <td>window outer</td><td></td><td></td><td></td>
+                </tr>
+                <tr id="screen"><td>Screen</td><td></td><td></td><td></td></tr>
+                <tr id="screenavail">
+                    <td>Screen avail</td><td></td><td></td><td></td>
+                </tr>
+                <tr id="bodyclient">
+                    <td>body client</td><td></td><td></td><td></td>
+                </tr>
+                <tr id="bodyoffset">
+                    <td>body Offset</td><td></td><td></td><td></td>
+                </tr>
+                <tr id="bodyscroll">
+                    <td>body Scroll</td><td></td><td></td><td></td>
+                </tr>
+                <tr id="docEltclient">
+                    <td>doc elt client</td><td></td><td></td><td></td>
+                </tr>
+                <tr id="docEltoffset">
+                    <td>doc elt offset</td><td></td><td></td><td></td>
+                </tr>
+                <tr id="docEltscroll">
+                    <td>doc elt scroll</td><td></td><td></td><td></td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>MathML:</h2>
+        <h3>Fractions and mpadding</h3>
+        <p>
+            original:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="\frac{\operatorname{d}\!^{2}y}{\operatorname{d}\!x^{2}}" display="inline">
+                <mfrac>
+                    <mrow>
+                        <msup>
+                            <mpadded width="-1.7pt">
+                                <mi mathvariant="normal">d</mi>
+                            </mpadded>
+                            <mn mathvariant="normal">2</mn>
+                        </msup>
+                        <mo mathvariant="bold">⁡</mo>
+                        <mi>y</mi>
+                    </mrow>
+                    <mrow>
+                        <mpadded width="-1.7pt">
+                            <mi mathvariant="normal">d</mi>
+                        </mpadded>
+                        <mo mathvariant="bold">⁡</mo>
+                        <msup>
+                            <mi>x</mi><mn mathvariant="normal">2</mn>
+                        </msup>
+                    </mrow>
+                </mfrac>
+            </math>
+            mpadded width 0:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="\frac{\operatorname{d}\!^{2}y}{\operatorname{d}\!x^{2}}" display="inline">
+                <mfrac>
+                    <mrow>
+                        <msup>
+                            <mpadded width="0pt">
+                                <mi mathvariant="normal">d</mi>
+                            </mpadded>
+                            <mn mathvariant="normal">2</mn>
+                        </msup>
+                        <mo mathvariant="bold">⁡</mo>
+                        <mi>y</mi>
+                    </mrow>
+                    <mrow>
+                        <mpadded width="0pt">
+                            <mi mathvariant="normal">d</mi>
+                        </mpadded>
+                        <mo mathvariant="bold">⁡</mo>
+                        <msup>
+                            <mi>x</mi><mn mathvariant="normal">2</mn>
+                        </msup>
+                    </mrow>
+                </mfrac>
+            </math>
+            mpadded:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="\frac{\operatorname{d}\!^{2}y}{\operatorname{d}\!x^{2}}" display="inline">
+                <mfrac>
+                    <mrow>
+                        <msup>
+                            <mpadded>
+                                <mi mathvariant="normal">d</mi>
+                            </mpadded>
+                            <mn mathvariant="normal">2</mn>
+                        </msup>
+                        <mo mathvariant="bold">⁡</mo>
+                        <mi>y</mi>
+                    </mrow>
+                    <mrow>
+                        <mpadded>
+                            <mi mathvariant="normal">d</mi>
+                        </mpadded>
+                        <mo mathvariant="bold">⁡</mo>
+                        <msup>
+                            <mi>x</mi><mn mathvariant="normal">2</mn>
+                        </msup>
+                    </mrow>
+                </mfrac>
+            </math>
+            simpler:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="\frac{\operatorname{d}\!^{2}y}{\operatorname{d}\!x^{2}}" display="inline">
+                <mfrac>
+                    <mrow>
+                        <msup>
+                            <mi mathvariant="normal">d</mi>
+                            <mn mathvariant="normal">2</mn>
+                        </msup>
+                        <mi>y</mi>
+                    </mrow>
+                    <mrow>
+                        <mi mathvariant="normal">d</mi>
+                        <msup>
+                            <mi>x</mi><mn mathvariant="normal">2</mn>
+                        </msup>
+                    </mrow>
+                </mfrac>
+            </math>
+        </p>
+        <h3>Fence sizing:</h3>
+        <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="\left[\left(\frac{1}{1}\right)\right]" display="block">
+          <mrow>
+            <mo>[</mo>
+            <mrow>
+              <mo>(</mo>
+              <mfrac>
+                <mn>1</mn>
+                <mn>1</mn>
+              </mfrac>
+              <mo>)</mo>
+            </mrow>
+            <mo>]</mo>
+          </mrow>
+        </math>
+        <script src="script.js"></script>
+        <script>
+            document.getElementById('internalscript').style.textDecoration = 'none';
+        </script>
+    </body>
+</html>

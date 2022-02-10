@@ -73,7 +73,7 @@ Yomu | 13 | 36 | 2
 Notes:
 * Calibre: doesn't detect light/dark mode
 
-Untryable eReaders: Epub Files Viewer
+Untryable eReaders: Epub Files Viewer, MarginNote 3
 
 ## Windows
 

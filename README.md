@@ -17,6 +17,8 @@
 
 These readers display the epub decently well and render MathML.  The "best" ones also resize fences (parentheses, brackets, etc) for large arguments.
 
+Note that these haven't been updated since adding `mover` and `munder` to the MathML tests.
+
 ---------------------------
 
 The overall goal is to use https://github.com/brucemiller/LaTeXML to convet https://github.com/teepeemm/APEXCalculusLT_Source to an epub.  Some epub readers are less useful than others for reading the resulting file.  The goal of this repository is to track what epub readers don't work and why, and to determine what shortcomings I can work around.  For our purposes, "Good enough" and "OK" means the extent to which we're able to work around any problems.

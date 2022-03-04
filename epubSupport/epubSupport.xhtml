@@ -168,8 +168,29 @@
                 </mfrac>
             </math>
         </p>
+        <p>horizontal sizing:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="\underbrace{\makebox[284.52756pt]{}}_{a}">
+                <munder>
+                    <munder accentunder="true">
+                        <mpadded width="284.5pt"/>
+                        <mo movablelimits="false">⏟</mo>
+                    </munder>
+                    <mi>a</mi>
+                </munder>
+            </math>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" alttext="\overbrace{\makebox[28.45274pt]{}}^{a}">
+                <mover>
+                    <mover accent="true">
+                        <mpadded width="28.5pt"/>
+                        <mo movablelimits="false">⏞</mo>
+                    </mover>
+                    <mi>a</mi>
+                </mover>
+            </math>
+        </p>
         <h3>Fence sizing:</h3>
-        <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="\left[\left(\frac{1}{1}\right)\right]" display="block">
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"
+            alttext="\left[\left(\frac{1}{1}\right)\right]">
           <mrow>
             <mo>[</mo>
             <mrow>
@@ -182,6 +203,17 @@
             </mrow>
             <mo>]</mo>
           </mrow>
+        </math>
+        <h3>Non-text in mtext</h3>
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"
+            alttext="\langle\mbox{\emph{argument list}}\rangle">
+            <mrow>
+                <mo stretchy="false">⟨</mo>
+                <mtext mathvariant="italic">
+                    <em>works</em>
+                </mtext>
+                <mo stretchy="false">⟩</mo>
+            </mrow>
         </math>
         <script src="script.js"></script>
         <script>

@@ -95,4 +95,4 @@ Notes:
 
 ## MathML Errors
 
-The most common MathML errors are not resizing the fences (contributes 1 error) and allowing `<mpadded width="-1.7pt">` (which comes from `\!`) to swallow its contents (contributes 2 errors).  If a viewer has no comment on why it scored 2, 3, or 4 points for MathML, it's because of some combination of those two errors.
+The most common MathML errors are not resizing the fences (contributes 1 error) and allowing `<mpadded width="-1.7pt">` (which comes from `\!`) to swallow its contents (contributes 2 errors).  If a viewer has no comment on why it missed 1, 2, or  3 points for MathML, it's because of some combination of those two errors.
